@@ -33,8 +33,9 @@ To compile the project make sure you have the libraries `libx11` and `lib32-libx
 
 ```bash
 
-git clone https://github.com/NotMurPh/ClipGuard.git && cd ClipGuard
-g++ ClipGuard.cpp Selection.cpp  -o ClipGuard -l X11
+git clone https://github.com/NotMurPh/ClipGuard.git
+mkdir ClipGuard/build && cd ClipGuard/src
+g++ ClipGuard.cpp Selection.cpp -o ../build/ClipGuard -l X11
 
 ```
 
