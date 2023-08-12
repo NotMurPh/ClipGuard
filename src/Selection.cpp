@@ -53,13 +53,13 @@ XEvent Selection::WaitForNotification ( int type , int state = PropertyNewValue 
 	event = XEvent();
 
 	// Wait 3 seconds for a new event
-	for ( int elapsed_miliseconds = 0 ; elapsed_miliseconds != 3000 ; elapsed_miliseconds+= 10 ) {
+	for ( int elapsed_miliseconds = 0 ; elapsed_miliseconds != 3000 ; elapsed_miliseconds+= 1 ) {
 	
-		// Check for new events in 10 milisecond intervals
+		// Check for new events in 1 milisecond intervals
 		if ( !XPending( display ) ) {
 
-			// This function is in microseconds so 10 miliseconds times 1000
-			usleep( 10 * 1000 );
+			// This function is in microseconds so 1 miliseconds times 1000
+			usleep( 1 * 1000 );
 			continue;
 
 		}

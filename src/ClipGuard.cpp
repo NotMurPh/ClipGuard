@@ -105,11 +105,11 @@ int main ( int arguments_count , char** arguments ) {
 		// Wait for events to handle
 		while ( true ) {
 
-			// Checking for events every 10 millisecond so the program doesn't get blocked by XNextEvent
+			// Checking for events every 1 millisecond so the program doesn't get blocked by XNextEvent
 			if ( !XPending( Selection::display ) ) {
 
-				// This function is in microseconds so 10 miliseconds times 1000
-				usleep( 10 * 1000 );
+				// This function is in microseconds so 1 miliseconds times 1000
+				usleep( 1 * 1000 );
 				continue;
 
 			}
