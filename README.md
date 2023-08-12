@@ -40,7 +40,7 @@ g++ ClipGuard.cpp Selection.cpp  -o ClipGuard -l X11
 
 ### Download 📥
 
-Just download the latest relase from this page
+Just download the latest relase from [this](https://github.com/NotMurPh/ClipGuard/releases/latest) page
 
 ## Usage 🧑‍💻
 
