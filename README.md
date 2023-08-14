@@ -82,6 +82,10 @@ Run the program at dawn 🌅 with your desired selections as arguments like so:
 
 Now that you know what's needed to be done go, go and summon the gurdian 💂🏻 May he always protects you!
 
+## Caution ⚠️
+
+Do not use this with another clipboard manager as it may lead to unexpected and unwanted resualts❗
+
 ## Thanks for visiting 🙃
 
 Leave a like if you like 😉
