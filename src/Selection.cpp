@@ -155,6 +155,10 @@ string Selection::GetContent ( Atom target ) {
 	// If the content type was INCR do: ( INCR means that the content is large and needs to be broken down to pieces and recived that way )
 	if ( property_type ==  incr_atom ) {
 
+		// Make sure that our vecotrs aren't filled with previous content and are empty
+		property_contents.clear();
+		numbers_of_items.clear();
+
 		// Tell the owner that "we know pls send the pieces" by desperately deleting our window property
 		XDeleteProperty( display , window , property );
 
