@@ -114,6 +114,7 @@ int main ( int arguments_count , char** arguments ) {
 
 			}
 
+			// Read the next event in the queue
 			XNextEvent( Selection::display , &event );
 
 			// For each selection in selections do :
