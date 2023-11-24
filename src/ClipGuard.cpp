@@ -1,5 +1,6 @@
 #include "Selection.h" /* For creating xlib seleciton instnaces and handling them easily */
 
+#include <X11/Xlib.h>
 #include <csignal> /* For handeling exit signals */
 #include <cstring> /* For getting the signal names */
 #include <stdexcept> /* For runtime_error exception */
@@ -114,6 +115,7 @@ int main ( int arguments_count , char** arguments ) {
 
 			}
 
+			// Read the next event in the queue
 			XNextEvent( Selection::display , &event );
 
 			// For each selection in selections do :

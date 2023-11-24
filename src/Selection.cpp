@@ -235,7 +235,7 @@ void Selection::SendNotification ( XSelectionRequestEvent* request_event , bool 
 // Sends the targets to the requestor
 void Selection::SendTargets ( XSelectionRequestEvent* request_event ) {
 	
-	XChangeProperty( display , request_event -> requestor , request_event -> property , targets_atom , 32 , PropModeReplace , ( unsigned char* )this -> targets , this -> targets_count );
+	XChangeProperty( display , request_event -> requestor , request_event -> property , XA_ATOM , 32 , PropModeReplace , ( unsigned char* )this -> targets , this -> targets_count );
 	SendNotification( request_event , true );
 
 }
